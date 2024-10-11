@@ -10,5 +10,8 @@
     "javascript"
   ],
   "author": "Cristiam Montoya cristiammontoya12@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
