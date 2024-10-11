@@ -16,10 +16,10 @@ function fetchData(urlApi, callback){  //urlApi, hace referencia a cualquier api
     //aquí creamos una funcion anonima para verificar que todo haya salido bien, esto gracias a onreadystatechange, esta es llamada cada vez que ready state cambie
     xhttp.onreadystatechange = function (event) {
         //cuando la operación ha sido completada, validamos el estado para manejar los errores
-        if(xhhtp.readyState === 4){
+        if(xhttp.readyState === 4){
             //validamos la respuesta del servidor, estas pueden ser:
             //100-199 -> respuestas informativas; 200-299 -> respuestas satisfactorias; 300-399 -> Redirecciones; 400-499 -> errores del cliente; 500-599 -> errores de servidores
-            if(xhhtp.status === 200){
+            if(xhttp.status === 200){
                 //ahora podemos invocar al callback 
                 callback(null, JSON.parse(xhttp.responseText)); //el primer parametro, es para errores, el segundo usamos el json parse para convertir el texto en un JSON
             }else{
