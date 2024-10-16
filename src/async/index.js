@@ -7,8 +7,8 @@ const fnAsync = () => {
     });
 }
 
-const anotherFn = async () => {
-    const something = await fnAsync();
+const anotherFn = async () => {  //con la palabra reservada 'async' creamos una función asincrona
+    const something = await fnAsync(); //la palabra await va dentro de async y esta espera a que se termine de ejecutar, para continuar
     console.log(something);
     console.log('Hello!'); //pero este hello si debe esperar a something
 }
@@ -17,7 +17,9 @@ console.log('Before');
 anotherFn();
 console.log('After');
 
-//como tal no se frena la ejecución
+//como tal no se frena la ejecución, esto porque javascript, da prioridad a lo que pueda ejecutar, mientras que las funciones
+//asincronas quedan en reserva en la webAPI, ya terminando lo que puede ejecutar, el event loop le pasara la funcion
+//para ser ejecutada
 
 //Output:
 // Before
