@@ -54,3 +54,5 @@ const data = {
   updatedAt: '2024-10-16T16:43:55.000Z'
 }
 */
+
+//usar esta url : https://api.escuelajs.co/api/v1/products/216, aquí esta el producto que se creo :)
