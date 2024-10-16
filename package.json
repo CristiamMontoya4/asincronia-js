@@ -4,7 +4,7 @@
   "description": "Curso para hacer uso del asincronismo de javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src/proyect",
     "callback": "node src/callback/challenge.js"
   },
   "keywords": [
@@ -16,5 +16,8 @@
     "node-fetch": "^3.3.2",
     "xmlhttprequest": "^1.8.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
