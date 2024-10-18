@@ -42,3 +42,19 @@ Crear el archivo ++.gitignore++ (estará fuera de la carpeta src). En los sistem
 ```
 Para guardar los cambios de un archivo, presionar las teclas ++Ctrl + S++ .
 Muy importante instalar ++la extensión Code Runner++, presionar las teclas ++Ctrl + P++ y pegar: ++ext install formulahendry.code-runner++ y dar ENTER. Lo instala automáticamente (fuente: aquí).
+
+#Para hacer el despliegue
+1. descargar ghpages
+```
+     npm i gh-pages --save-dev   
+```
+2. En el packaje.json, se debe agregar el siguiente script, el -d indica el directorio de lo que queremos desplegar
+```
+"deploy": "gh-pages -d src/proyect", 
+```
+3 Ejecutar el siguiente comando en la terminal
+```
+npm run deploy
+```
+
+4. Esto crea una rama que se sube a nuestro repositorio
